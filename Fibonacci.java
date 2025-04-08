@@ -8,12 +8,16 @@ public class Fibonacci {
 		int a=0; 
 		int b=1;
 		int c;
-		System.out.print(a+","+b+",");
-		for(int i=0;i<n-2;i++) {
-			c=a+b;
-			System.out.print(c+",");
-			a=b;
-			b=c;
+		for (int i = 0; i < n; i++) {
+			if (i == 0) {
+				System.out.print(a);
+			} else if (i == 1) {
+				System.out.print("," + b);
+			} else {
+				c = a + b;
+				System.out.print("," + c);
+				a = b;
+				b = c;
 	}
 	}
 }
